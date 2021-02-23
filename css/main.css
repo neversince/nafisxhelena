@@ -1,3 +1,10 @@
+:root {
+  --theme-color: lightgrey;
+  --slider-color: lightgrey;
+}
+a {
+  text-decoration: none;
+}
 body {
   width: 100%;
   height: 100%;
@@ -31,7 +38,7 @@ body {
   animation-name: fadetext;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  animation-delay: 1.5s;
+  animation-delay: 2.5s;
   opacity: 0; 
 }
 .bgvid {
@@ -56,11 +63,11 @@ body {
 }
 .wrapper{   
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: auto;
-  width: auto;
+  width: 300px;
   margin: auto;
   line-height: 0.7; 
 }
@@ -83,6 +90,149 @@ body {
   transition-timing-function: ease-out;
   text-shadow: 0px 0px 30px white;
 }
+
+/*start*/
+.menu {
+  display: flex;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 30px;
+}
+.link {
+  display: table-cell;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 3.5vh;
+  color: white;
+  text-shadow: 1px 1px 6px black;
+  padding: 5px;
+}
+.buttonwrapper {
+  width: auto;
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+  font-size: 2.5vh;
+  text-align: center;
+}
+.button {
+  color: white;
+  border: none;
+  outline: none;
+  background-color: Transparent;
+  text-shadow: 2px 2px 8px black;
+  -webkit-transition: .4s;
+  transition-duration: .4s;
+  transition-timing-function: ease-out;
+}
+.button:hover {
+  -webkit-transition: .4s;
+  transition-duration: .4s;
+  transition-timing-function: ease-out;
+  text-shadow: 0px 0px 30px white;
+  transform: scale(1.15);
+}
+.slider {
+  width: 100%;
+  height: 1.5vh;
+  border-radius: 5px;   
+  background: var(--slider-color);
+  outline: none;
+  -webkit-appearance: none;
+  box-shadow: 1px 1px 10px black;
+  -webkit-transition: .4s;
+  transition-duration: .4s;
+  transition-timing-function: ease-out;
+}
+.slider:hover {
+  -webkit-transition: .4s;
+  transition-duration: .4s;
+  transition-timing-function: ease-out;
+  box-shadow: 0px 0px 20px white;
+  transform: scale(1.1);
+}
+.slider::-webkit-slider-thumb {
+  width: 2.5vh;
+  height: 2.5vh;
+  cursor: pointer;
+  appearance: none;
+  border-radius: 50%; 
+  background: var(--theme-color);
+  -webkit-appearance: none;
+  box-shadow: 1px 1px 10px black;
+}
+.slider::-moz-range-thumb {
+  width: 2.5vh;
+  height: 2.5vh;
+  cursor: pointer;
+  appearance: none;
+  border-radius: 50%; 
+  background: var(--theme-color);
+  -moz-appearance: none;
+  box-shadow: 1px 1px 10px black;
+}
+.hvr-overline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-overline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  top: 0px;
+  bottom: 20px;
+  background: var(--theme-color);
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-overline-from-center:hover:before, .hvr-overline-from-center:focus:before, .hvr-overline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+.grow { 
+  transition: all .3s ease-in-out;
+}
+.grow:hover { 
+  transform: scale(1.15);
+}
+.marquee {
+  position:absolute;
+  display: block;
+  height: 2.5vh;
+}
+.marqueetext {
+  display: inline-block;
+  font-size: 2vh; 
+  font-family: 'Maven Pro', 'Arial'; 
+  color: white;
+  text-shadow: 2px 2px 8px black;
+  -webkit-transition: .4s;
+  transition-duration: .4s;
+  transition-timing-function: ease-out;
+}
+.marqueetext:hover {
+  -webkit-transition: .4s;
+  transition-duration: .4s;
+  transition-timing-function: ease-out;
+  transform: scale(1.1);
+}
+/*end*/
 
 
 
@@ -113,8 +263,13 @@ html {
     border: 1px solid #adafb2;
     border-width: 1px 0;
     overflow: hidden;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Maven Pro', 'Arial'; 
     font-weight: bold;
+    animation-timing-function:ease-in;
+    animation-name: fadetext;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
   }
 
   ul#countdown li {
@@ -125,6 +280,11 @@ html {
     font-size: 72px;
     font-size: 6vw;
     text-align: center;
+    animation-timing-function:ease-in;
+    animation-name: fadetext;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
   }
 
   ul#countdown li .label {
