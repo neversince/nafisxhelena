@@ -54,7 +54,7 @@ player.addEventListener('ended', (e) => {
 }
 
 function changeVolume (val) {
-player.volume = val / 200;
+player.volume = val / 1000;
 }
 
 function playPause(el) {
