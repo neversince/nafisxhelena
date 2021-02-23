@@ -6,7 +6,7 @@ initializePlayer();
 }
 
 var songs = [
-"media/we did it... together.mp3",
+/* "media/we did it... together.mp3",
 "media/repeat.mp3",
 "media/from the start.mp3",
 "media/gettingtomyhead.mp3",
@@ -20,7 +20,7 @@ var songs = [
 "media/make u feel.mp3",
 "media/impatient.mp3",
 "media/velvet.mp3",
-"media/angel.mp3",
+"media/angel.mp3", */
 "media/saints.mp3",
 "media/alone.mp3"
 ];
