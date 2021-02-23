@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>counter</title>
+	<meta charset="UTF-8">
+  <link rel="stylesheet" href="css/main.css">
+
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src='js/jquery-ui.min.js'></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  
+ 
+</head>
+<body>
+  <audio id="divAudio">
+    <source src="assets/saints.mp3" type="audio/mp3">
+  </audio>
+ 
+  <script>
+    var vAudio = document.getElementById("divAudio");
+    function playMusic()
+    {
+       vAudio.play();
+    }
+  </script>
+
+  <div class="bgfade overlay", onmouseover="playMusic()">
+		<video id="background" class="bgvid" src="assets/background.mp4" preload="auto" muted autoplay loop></video>
+	</div>    
+
+  <ul id="countdown">
+    <li id="days">
+      <div class="number">00</div>
+      <div class="label">Days</div>
+    </li>
+    <li id="hours">
+      <div class="number">00</div>
+      <div class="label">Hours</div>
+    </li>
+    <li id="minutes">
+      <div class="number">00</div>
+      <div class="label">Minutes</div>
+    </li>
+    <li id="seconds">
+      <div class="number">00</div>
+      <div class="label">Seconds</div>
+    </li>
+  </ul>
+
+
+
+</body>
+
+
+</html>

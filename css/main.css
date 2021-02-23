@@ -1,0 +1,139 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+} 
+@keyframes fadebg {
+  0%   { opacity: 0;}
+  100% {opacity: 0.4;}
+} 
+.bgfade {
+  animation-timing-function:ease-in;
+  animation-name: fadebg;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes fadetext {
+  0%   { opacity: 0;}
+  100% {opacity: 1;}
+}
+.fadetitle {
+  animation-timing-function:ease-in;
+  animation-name: fadetext;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: .5s;
+  opacity: 0; 
+}
+.fadelinks {
+  animation-timing-function:ease-in;
+  animation-name: fadetext;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  opacity: 0; 
+}
+.bgvid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100vw;
+  height: 100vw;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+}
+.bgimg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+}
+.wrapper{   
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: auto;
+  margin: auto;
+  line-height: 0.7; 
+}
+.title {
+  width: auto;
+  height: auto;
+  margin: 20px;
+  text-align: center;
+  transition-duration: .5s;
+  transition-timing-function: ease-out;
+  text-shadow: 3px 3px 10px black;
+  font-family: 'Maven Pro', Arial;
+  letter-spacing: -2px;
+  font-size: 10vh;
+  color: white;  
+}
+.title:hover {
+  -webkit-transition: .4s;
+  transition-duration: .4s;
+  transition-timing-function: ease-out;
+  text-shadow: 0px 0px 30px white;
+}
+
+
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  html,
+  body {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  ul#countdown {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    margin: 0 auto;
+    padding: 15px 0 20px 0;
+    color: #fff;
+    border: 1px solid #adafb2;
+    border-width: 1px 0;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
+
+  ul#countdown li {
+    margin: 0 -4px 0 0;
+    padding: 0;
+    display: inline-block;
+    width: 25%;
+    font-size: 72px;
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  ul#countdown li .label {
+    color: #adafb2;
+    font-size: 18px;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+  }
+
+  html {
+    overflow: hidden;
+}
