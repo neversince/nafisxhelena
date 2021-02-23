@@ -22,7 +22,11 @@ var songs = [
 "media/velvet.mp3",
 "media/angel.mp3", */
 "media/saints.mp3",
-"media/alone.mp3"
+"media/alone.mp3",
+"media/itami.mp3",
+"media/angels.mp3",
+"media/memory.mp3",
+"media/waster.mp3"
 ];
 
 var songLinks = [
@@ -54,7 +58,7 @@ player.addEventListener('ended', (e) => {
 }
 
 function changeVolume (val) {
-player.volume = val / 1000;
+player.volume = val / 200;
 }
 
 function playPause(el) {
