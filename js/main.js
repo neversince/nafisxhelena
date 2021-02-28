@@ -26,7 +26,12 @@ var songs = [
 "media/itami.mp3",
 "media/angels.mp3",
 "media/memory.mp3",
-"media/waster.mp3"
+"media/waster.mp3",
+"media/merry go around.mp3",
+"media/mewtwo.mp3",
+"media/off white.mp3",
+"media/rain check.mp3",
+"media/ultra.mp3"
 ];
 
 var songLinks = [
