@@ -31,7 +31,8 @@ var songs = [
 "media/mewtwo.mp3",
 "media/off white.mp3",
 "media/rain check.mp3",
-"media/ultra.mp3"
+"media/ultra.mp3",
+"media/tango.mp3"
 ];
 
 var songLinks = [
