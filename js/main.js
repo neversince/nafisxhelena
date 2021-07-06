@@ -32,7 +32,12 @@ var songs = [
 "media/off white.mp3",
 "media/rain check.mp3",
 "media/ultra.mp3",
-"media/tango.mp3"
+"media/tango.mp3",
+"media/cry.mp3",
+"media/dead.mp3",
+"media/hello.mp3",
+"media/rare.mp3",
+"media/wait.mp3"
 ];
 
 var songLinks = [
